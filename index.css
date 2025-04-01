@@ -1,95 +1,82 @@
+/* Section 1 样式 */
 .u-section-1 .u-sheet-1 {
   min-height: 402px;
+  text-align: center; /* 确保内容居中，包括按钮和标题 */
 }
 
+/* 标题样式 */
+.u-section-1 .u-title {
+  text-align: center; /* 居中对齐 */
+  font-size: 2rem; /* 标题字体大小 */
+  font-weight: bold; /* 加粗 */
+  color: #000; /* 黑色字体 */
+  margin-bottom: 20px; /* 与图片的间距 */
+}
+
+/* 图片样式 */
 .u-section-1 .u-image-1 {
-  height: 323px;
-  margin-top: 1px;
-  margin-bottom: 0;
+  display: block;
+  max-width: 100%; /* 确保图片宽度不超过容器 */
+  height: auto; /* 保持图片比例 */
+  margin: 0 auto; /* 图片水平居中 */
 }
 
-.u-section-1 .u-btn-1 {
-  --radius: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  background-image: none;
-  margin: 0 auto 0 236px;
-  padding: 28px 61px 29px 60px;
-}
-
+/* 通道按钮样式 */
+.u-section-1 .u-btn-1,
 .u-section-1 .u-btn-2 {
-  --radius: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  background-image: none;
-  margin: -75px 404px 1px auto;
-  padding: 28px 61px 29px 60px;
+  display: inline-block;
+  font-size: 1rem; /* 按钮字体大小 */
+  padding: 15px 30px; /* 按钮内边距 */
+  border-radius: 25px; /* 圆角按钮 */
+  text-align: center;
+  margin: 10px; /* 按钮之间的间距 */
+  background-color: #478ac9; /* 按钮背景色 */
+  color: #fff; /* 按钮文字颜色 */
+  text-decoration: none; /* 去掉下划线 */
+  transition: all 0.3s ease; /* 添加悬停动画 */
 }
 
-@media (max-width: 1199px) {
-  .u-section-1 .u-btn-1 {
-    margin-left: 36px;
-  }
-
-  .u-section-1 .u-btn-2 {
-    margin-right: 204px;
-  }
+.u-section-1 .u-btn-1:hover,
+.u-section-1 .u-btn-2:hover {
+  background-color: #356aa0; /* 悬停时的背景色 */
+  transform: scale(1.05); /* 悬停时放大效果 */
 }
 
+/* 响应式样式 */
 @media (max-width: 991px) {
-  .u-section-1 .u-image-1 {
-    width: 820px;
-    margin-left: -50px;
-    margin-right: -50px;
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-left: 0;
-  }
-
+  .u-section-1 .u-btn-1,
   .u-section-1 .u-btn-2 {
-    margin-right: 0;
+    font-size: 0.9rem; /* 缩小字体大小 */
+    padding: 12px 25px; /* 缩小按钮内边距 */
+    margin: 8px auto; /* 按钮水平居中 */
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 292px;
+  .u-section-1 .u-btn-1,
+  .u-section-1 .u-btn-2 {
+    display: block; /* 按钮在小屏幕上堆叠显示 */
+    width: 80%; /* 按钮宽度为容器的 80% */
+    margin: 10px auto; /* 按钮水平居中 */
   }
 
-  .u-section-1 .u-image-1 {
-    height: 213px;
-    width: 540px;
-    margin-left: 0;
-    margin-right: 0;
+  .u-section-1 .u-title {
+    font-size: 1.8rem; /* 缩小标题字体大小 */
+    margin-bottom: 15px; /* 减小标题与图片的间距 */
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 213px;
-  }
-
-  .u-section-1 .u-image-1 {
-    height: 134px;
-    width: 440px;
-    margin-top: 0;
-    margin-left: -50px;
-    margin-right: -50px;
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 3px;
-    margin-left: -15px;
-  }
-
+  .u-section-1 .u-btn-1,
   .u-section-1 .u-btn-2 {
-    margin-top: -76px;
-    margin-right: -15px;
-    margin-bottom: 0;
+    font-size: 0.8rem; /* 缩小字体大小 */
+    padding: 8px 15px; /* 缩小按钮内边距 */
+    width: 90%; /* 按钮宽度为容器的 90% */
+    margin: 8px auto; /* 按钮水平居中 */
+  }
+
+  .u-section-1 .u-title {
+    font-size: 1.5rem; /* 进一步缩小标题字体大小 */
+    margin-bottom: 10px; /* 减小标题与图片的间距 */
   }
 }
