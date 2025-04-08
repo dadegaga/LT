@@ -20,7 +20,7 @@
   max-width: 100%; /* 确保图片宽度不超过容器 */
   height: auto; /* 保持图片比例 */
   margin: 0 auto; /* 图片水平居中 */
-  max-height: 400px; /* 在移动端让图片占主体地位 */
+  max-height: 500px; /* 在移动端让图片占主体地位 */
 }
 
 /* 按钮容器样式 */
@@ -47,7 +47,7 @@
 
 /* 按钮图标样式 */
 .u-btn-container img {
-  max-height: 35px; /* 缩小图标高度 */
+  max-height: 30px; /* 缩小图标高度 */
   margin-bottom: 2px; /* 图标与文字说明的间距 */
 }
 
@@ -73,7 +73,7 @@
   }
 
   .u-btn-container {
-    width: 70%; /* 缩小按钮宽度为容器的 70% */
+    width: 60%; /* 缩小按钮宽度为容器的 60% */
   }
 
   .u-section-1 .u-image-1 {
@@ -81,7 +81,7 @@
   }
 
   .u-btn-container img {
-    max-height: 30px; /* 进一步缩小图标高度 */
+    max-height: 25px; /* 进一步缩小图标高度 */
   }
 
   .u-btn-container .u-description {
