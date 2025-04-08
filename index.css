@@ -20,7 +20,7 @@
   max-width: 100%; /* 确保图片宽度不超过容器 */
   height: auto; /* 保持图片比例 */
   margin: 0 auto; /* 图片水平居中 */
-  max-height: 600px; /* 拉长图片高度 */
+  max-height: 400px; /* 在移动端让图片占主体地位 */
 }
 
 /* 按钮容器样式 */
@@ -29,6 +29,7 @@
   justify-content: center; /* 水平居中 */
   gap: 10px; /* 按钮之间的间距 */
   flex-wrap: wrap; /* 在小屏幕上自动换行 */
+  margin-top: 20px; /* 按钮与图片的间距 */
 }
 
 /* 按钮样式 */
@@ -46,21 +47,21 @@
 
 /* 按钮图标样式 */
 .u-btn-container img {
-  max-height: 40px; /* 图标高度 */
+  max-height: 35px; /* 缩小图标高度 */
   margin-bottom: 2px; /* 图标与文字说明的间距 */
 }
 
 /* 按钮下方文字说明样式 */
 .u-btn-container .u-description {
   text-align: center;
-  font-size: 0.8rem; /* 缩小文字大小 */
+  font-size: 0.7rem; /* 缩小文字大小 */
   color: #ccc; /* 灰白色文字 */
   margin-top: 2px; /* 缩小与按钮的间距 */
 }
 
 .u-btn-container .u-description span {
   display: block;
-  font-size: 0.7rem; /* 缩小副标题文字大小 */
+  font-size: 0.6rem; /* 缩小副标题文字大小 */
   color: #aaa; /* 更浅的灰白色 */
 }
 
@@ -72,6 +73,22 @@
   }
 
   .u-btn-container {
-    width: 90%; /* 小屏幕上方框宽度为容器的 90% */
+    width: 70%; /* 缩小按钮宽度为容器的 70% */
+  }
+
+  .u-section-1 .u-image-1 {
+    max-height: 500px; /* 在移动端让图片占主体地位 */
+  }
+
+  .u-btn-container img {
+    max-height: 30px; /* 进一步缩小图标高度 */
+  }
+
+  .u-btn-container .u-description {
+    font-size: 0.6rem; /* 缩小文字大小 */
+  }
+
+  .u-btn-container .u-description span {
+    font-size: 0.5rem; /* 缩小副标题文字大小 */
   }
 }
